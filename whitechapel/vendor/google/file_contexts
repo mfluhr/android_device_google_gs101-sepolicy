@@ -96,6 +96,7 @@
 /dev/umts_boot0                u:object_r:radio_device:s0
 /dev/logbuffer_tcpm            u:object_r:logbuffer_device:s0
 /dev/logbuffer_usbpd           u:object_r:logbuffer_device:s0
+/dev/logbuffer_pogo_transport  u:object_r:logbuffer_device:s0
 /dev/logbuffer_ssoc            u:object_r:logbuffer_device:s0
 /dev/logbuffer_wireless        u:object_r:logbuffer_device:s0
 /dev/logbuffer_ttf             u:object_r:logbuffer_device:s0
@@ -280,7 +281,6 @@
 /vendor/bin/init\.insmod\.sh    u:object_r:init-insmod-sh_exec:s0
 
 # USB
-/vendor/bin/hw/set_usb_irq\.sh                    u:object_r:set-usb-irq-sh_exec:s0
 /vendor/bin/hw/disable_contaminant_detection\.sh  u:object_r:disable-contaminant-detection-sh_exec:s0
 
 # NFC
