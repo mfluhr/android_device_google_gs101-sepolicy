@@ -7,7 +7,6 @@ type vendor_media_data_file, file_type, data_file_type;
 type vendor_log_file, file_type, data_file_type;
 type vendor_cbd_log_file, file_type, data_file_type;
 type vendor_dmd_log_file, file_type, data_file_type;
-type vendor_hwc_log_file, file_type, data_file_type;
 type vendor_rfsd_log_file, file_type, data_file_type;
 type vendor_dump_log_file, file_type, data_file_type;
 type vendor_rild_log_file, file_type, data_file_type;
@@ -24,7 +23,6 @@ type vendor_rpmbmock_data_file, file_type, data_file_type;
 # Exynos debugfs
 type vendor_ion_debugfs, fs_type, debugfs_type;
 type vendor_mali_debugfs, fs_type, debugfs_type;
-type vendor_dri_debugfs, fs_type, debugfs_type;
 type vendor_pm_genpd_debugfs, fs_type, debugfs_type;
 type vendor_regmap_debugfs, fs_type, debugfs_type;
 type vendor_usb_debugfs, fs_type, debugfs_type;
@@ -34,8 +32,6 @@ type vendor_votable_debugfs, fs_type, debugfs_type;
 type vendor_battery_debugfs, fs_type, debugfs_type;
 
 # Exynos sysfs
-type sysfs_exynos_bts, sysfs_type, fs_type;
-type sysfs_exynos_bts_stats, sysfs_type, fs_type;
 type sysfs_ota, sysfs_type, fs_type;
 
 # Exynos Firmware
@@ -96,16 +92,12 @@ type persist_modem_file, file_type, vendor_persist_type;
 type modem_img_file, contextmount_type, file_type, vendor_file_type;
 allow modem_img_file self:filesystem associate;
 
-# TCP logging
-type tcpdump_vendor_data_file, file_type, data_file_type, mlstrustedobject;
-
 # Pca
 type sysfs_pca, sysfs_type, fs_type;
 
 # Camera
 type persist_camera_file, file_type;
 type vendor_camera_tuning_file, vendor_file_type, file_type;
-type vendor_camera_data_file, file_type, data_file_type;
 type sysfs_camera, sysfs_type, fs_type;
 
 # GPS
@@ -134,9 +126,6 @@ type sysfs_spi, sysfs_type, fs_type;
 
 # Battery
 type persist_battery_file, file_type, vendor_persist_type;
-
-# CPU
-type sysfs_cpu, sysfs_type, fs_type;
 
 # Fabric
 type sysfs_fabric, sysfs_type, fs_type;
@@ -178,12 +167,6 @@ type sysfs_trusty, sysfs_type, fs_type;
 
 # BootControl
 type sysfs_bootctl, sysfs_type, fs_type;
-
-# Radio
-type radio_vendor_data_file, file_type, data_file_type;
-userdebug_or_eng(`
-  typeattribute radio_vendor_data_file mlstrustedobject;
-')
 
 # WLC
 type sysfs_wlc, sysfs_type, fs_type;
