@@ -13,6 +13,8 @@ kernel dm_device blk_file b/315907959
 kernel kernel capability b/340722537
 kernel kernel capability b/340723030
 kernel tmpfs chr_file b/315907959
+pixelstats_vendor block_device dir b/369537606
+ramdump ramdump capability b/369538457
 rfsd vendor_cbd_prop file b/317734418
 shell sysfs_net file b/329380904
 ssr_detector_app default_prop file b/350831964
