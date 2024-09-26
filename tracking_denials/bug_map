@@ -14,6 +14,7 @@ kernel kernel capability b/340722537
 kernel kernel capability b/340723030
 kernel tmpfs chr_file b/315907959
 pixelstats_vendor block_device dir b/369537606
+pixelstats_vendor block_device dir b/369735407
 ramdump ramdump capability b/369538457
 rfsd vendor_cbd_prop file b/317734418
 shell sysfs_net file b/329380904
@@ -32,3 +33,5 @@ vendor_init default_prop file b/316817111
 vendor_init default_prop property_service b/315104713
 vendor_init default_prop property_service b/366115458
 vendor_init default_prop property_service b/366116214
+vendor_init default_prop property_service b/369735133
+vendor_init default_prop property_service b/369735170
