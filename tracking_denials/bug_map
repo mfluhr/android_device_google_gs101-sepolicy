@@ -4,6 +4,9 @@ chre vendor_data_file dir b/301948771
 dump_display sysfs file b/340722772
 dump_modem sscoredump_vendor_data_coredump_file dir b/366115873
 dump_modem sscoredump_vendor_data_logcat_file dir b/366115873
+hal_camera_default cgroup_desc_file file b/372347927
+hal_graphics_composer_default cgroup_desc_file file b/372348503
+hal_power_default cgroup_desc_file file b/372348558
 hal_power_default hal_power_default capability b/240632824
 hal_sensors_default sysfs file b/340723303
 hal_vibrator_default default_android_service service_manager b/317316478
@@ -13,6 +16,7 @@ kernel dm_device blk_file b/315907959
 kernel kernel capability b/340722537
 kernel kernel capability b/340723030
 kernel tmpfs chr_file b/315907959
+modem_svc_sit hal_radioext_default process b/372348067
 pixelstats_vendor block_device dir b/369537606
 pixelstats_vendor block_device dir b/369735407
 platform_app vendor_fw_file dir b/372122654
