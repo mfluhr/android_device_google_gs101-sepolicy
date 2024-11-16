@@ -1,5 +1,6 @@
 
 battery_mitigation sysfs file b/364446534
+bluetooth audio_config_prop file b/379226761
 chre vendor_data_file dir b/301948771
 dump_display sysfs file b/340722772
 dump_modem sscoredump_vendor_data_coredump_file dir b/366115873
@@ -18,6 +19,8 @@ pixelstats_vendor block_device dir b/369537606
 pixelstats_vendor block_device dir b/369735407
 platform_app vendor_fw_file dir b/372122654
 platform_app vendor_rild_prop file b/372122654
+priv_app audio_config_prop file b/379226710
+radio audio_config_prop file b/379227275
 ramdump ramdump capability b/369538457
 rfsd vendor_cbd_prop file b/317734418
 shell sysfs_net file b/329380904
@@ -26,6 +29,7 @@ surfaceflinger selinuxfs file b/313804340
 system_server vendor_default_prop file b/366115457
 system_server vendor_default_prop file b/366116435
 system_server vendor_default_prop file b/366116587
+untrusted_app audio_config_prop file b/379226644
 untrusted_app nativetest_data_file dir b/305600845
 untrusted_app shell_test_data_file dir b/305600845
 untrusted_app system_data_root_file dir b/305600845
